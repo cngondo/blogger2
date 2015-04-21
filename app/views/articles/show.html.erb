@@ -1,3 +1,9 @@
+<p>
+  <% if @article.image.exists? %>
+      <%= image_tag @article.image.url %><br/>
+  <% end %>
+</p>
+
 <h1><%= @article.title %></h1>
 <p><%= @article.body %></p>
 <!-- Then the comments -->
